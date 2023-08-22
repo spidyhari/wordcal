@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <textarea id="txt" rows="20" cols="30">
+    </textarea>
+    <button onclick="calc()">calculate</button>
+    <p id="ans"></p>
+    <script>
+        function calc(){
+            var one = document.getElementById("txt").value;
+            var two = one.split(" ");
+            var three = two.length;
+            document.getElementById("ans").innerHTML="Number of words"+three;
+        }
+    </script>
+</body>
+</html>
